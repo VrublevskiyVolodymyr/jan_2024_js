@@ -1,6 +1,6 @@
 // Масиви та об'єкти:
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
-let arrays1 = [true, 1, "home", 22.5, false, 12, "cat", "dog",100,"one"];
+let arrays1 = [true, 1, "home", 22.5, false, 12, "cat", "dog", 100, "one"];
 console.log(arrays1[0]);
 console.log(arrays1[1]);
 console.log(arrays1[2]);
@@ -54,7 +54,7 @@ console.log(users[9]['password']);
 // let x = 0;
 let x = -3;
 
-if (x!==0) {
+if (x !== 0) {
     console.log('Вірно');
 } else {
     console.log('Невірно');
@@ -64,33 +64,29 @@ if (x!==0) {
 // (в першу, другу, третю или четверту частину години).
 let time = 55;
 
-if (time<=15){
+if (time <= 15) {
     console.log('I quarter')
-}
-else if (time>15 && time<=30){
+} else if (time > 15 && time <= 30) {
     console.log('II quarter')
-}
-else if (time>30 && time<=45){
+} else if (time > 30 && time <= 45) {
     console.log('III quarter')
-}
-else {
+} else {
     console.log('IV quarter')
 }
 
 // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 let day = 21;
 
-if (day<=10){
+if (day <= 10) {
     console.log('I decade')
-}
-else if (day>10 && day<=20){
-    console.log('II decade')}
-else {
+} else if (day > 10 && day <= 20) {
+    console.log('II decade')
+} else {
     console.log('III decade')
 }
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
 let num_of_day = +prompt("Enter a number of day");
-switch (num_of_day){
+switch (num_of_day) {
     case 1:
         console.log("Monday");
         break;
@@ -122,13 +118,11 @@ switch (num_of_day){
 let num1 = +prompt("Enter number 1", "1");
 let num2 = +prompt("Enter number 2", "1");
 
-if(num1===num2){
+if (num1 === num2) {
     console.log("number 1 is equal to number 2");
-}
-else if (num1>num2){
-console.log("number 1 is more than number 2");
-}
-else{
+} else if (num1 > num2) {
+    console.log("number 1 is more than number 2");
+} else {
     console.log("number 2 is more than number 1");
 }
 
@@ -152,21 +146,21 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 
-if(coursesAndDurationArray[0].monthDuration > 5){
+if (coursesAndDurationArray[0].monthDuration > 5) {
     console.log(`${coursesAndDurationArray[0].title}` + " Супер")
 }
-if(coursesAndDurationArray[1]["monthDuration"] > 5){
+if (coursesAndDurationArray[1]["monthDuration"] > 5) {
     console.log(`${coursesAndDurationArray[1].title}` + " Супер")
 }
-if(coursesAndDurationArray[2].monthDuration > 5){
+if (coursesAndDurationArray[2].monthDuration > 5) {
     console.log(`${coursesAndDurationArray[2].title}` + " Супер")
 }
-if(coursesAndDurationArray[3]["monthDuration"] > 5){
+if (coursesAndDurationArray[3]["monthDuration"] > 5) {
     console.log(`${coursesAndDurationArray[3].title}` + " Супер")
 }
-if(coursesAndDurationArray[4].monthDuration > 5){
+if (coursesAndDurationArray[4].monthDuration > 5) {
     console.log(`${coursesAndDurationArray[4].title}` + " Супер")
 }
-if(coursesAndDurationArray[5]["monthDuration"] > 5){
+if (coursesAndDurationArray[5]["monthDuration"] > 5) {
     console.log(`${coursesAndDurationArray[5].title}` + " Супер")
 }
