@@ -18,9 +18,9 @@ let book2 = {title: 'fifth mountain', pageCount: 253, genre: 'novel'};
 let book3 = {title: 'kaydashev family', pageCount: 232, genre: 'story'};
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
-let book4 = {title: 'alchemist', pageCount: 205, genre: 'novel', authors: ['Paulo Coelho', 75]};
-let book5 = {title: 'fifth mountain', pageCount: 253, genre: 'novel', authors: ['Paulo Coelho', 75]};
-let book6 = {title: 'kaydashev family', pageCount: 232, genre: 'story', authors: ['Nechuy-Levytskyi', 79]};
+let book4 = {title: 'alchemist', pageCount: 205, genre: 'novel', authors: [{name:'Paulo Coelho', age: 75}]};
+let book5 = {title: 'fifth mountain', pageCount: 253, genre: 'novel', authors: [{name:'Paulo Coelho',age: 75}]};
+let book6 = {title: 'kaydashev family', pageCount: 232, genre: 'story', authors: [{name:'Nechuy-Levytskyi', age:79}]};
 
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 
@@ -64,7 +64,7 @@ if (x !== 0) {
 // (в першу, другу, третю или четверту частину години).
 let time = 55;
 
-if (time <= 15) {
+if ( time >= 0 && time <= 15) {
     console.log('I quarter')
 } else if (time > 15 && time <= 30) {
     console.log('II quarter')
@@ -77,7 +77,7 @@ if (time <= 15) {
 // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 let day = 21;
 
-if (day <= 10) {
+if (day>=0 && day <= 10) {
     console.log('I decade')
 } else if (day > 10 && day <= 20) {
     console.log('II decade')
@@ -129,7 +129,7 @@ if (num1 === num2) {
 //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 
-let x1 = 'fixed';
+let x1 = '';
 
 x1 = x1 || "default";
 
