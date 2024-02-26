@@ -1,0 +1,34 @@
+.body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.users-box {
+    /*background: cornflowerblue;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 2vh;
+}
+
+.user-block {
+    height: auto;
+    background: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.user-block:hover {
+    transition: 1s;
+    box-shadow: -1px 4px 30px 7px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: -1px 4px 30px 7px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: -1px 4px 30px 7px rgba(0, 0, 0, 0.71);
+    cursor: pointer;
+}
+
+.user-block h2 {
+    text-align: center;
+}
