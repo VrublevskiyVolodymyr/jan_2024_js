@@ -1,0 +1,39 @@
+.div1{
+    height: 50px;
+    width: 200px;
+    background: #569ca8;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid black;
+}
+.div2{
+    height: 50px;
+    width: 200px;
+    background: #1c5b65;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid black;
+}
+.h1-1{
+    color: #073b09;
+}
+.h1-2{
+    color: #5fc564;
+}
+.ul1{
+    color: olive;
+    font-size: 30px;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+.product-image{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
