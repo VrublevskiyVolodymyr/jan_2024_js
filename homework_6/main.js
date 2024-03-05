@@ -111,14 +111,14 @@ let color = ['red', 'black'];
 const deckOfCards = (cardSuit, value, color) => {
     let cards = [];
 
-    for (const valueElem of value) {
+    for (let i = 0; i < value.length - 1; i++) {
         for (const card of cardSuit) {
             let colorCard;
             if ((card === 'clubs') || (card === 'spade')) {
                 colorCard = 'black'
             } else if ((card === 'diamond') || (card === 'heart'))
                 colorCard = 'red';
-            cards.push({value: valueElem, cardSuit: card, color: colorCard})
+            cards.push({value: value[i], cardSuit: card, color: colorCard})
         }
     }
     for (const col of color) {
@@ -295,10 +295,10 @@ let coursesArray = [
     }
 ];
 // --написати пошук всіх об'єктів, в який в modules є sass
-console.log(coursesArray.find(value => value.modules.includes('sass')));
+console.log(coursesArray.filter(value => value.modules.includes('sass')));
 console.log("-------------------------------------------------");
 
 
 // --написати пошук всіх об'єктів, в який в modules є docker
-console.log(coursesArray.find(value => value.modules.includes('docker')));
+console.log(coursesArray.filter(value => value.modules.includes('docker')));
 console.log("-------------------------------------------------");
