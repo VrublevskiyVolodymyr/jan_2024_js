@@ -1,0 +1,110 @@
+.ulElement {
+    background: silver;
+    margin: 10px;
+}
+
+.container {
+    background: #2d4f5d;
+    margin: 10px;
+    padding: 10px;
+}
+
+.block {
+    background: #5889a8;
+    margin: 10px;
+}
+
+.container2 {
+    background: #2d4f5d;
+    margin: 10px;
+    padding: 10px;
+}
+
+.item {
+    background: #5889a8;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.member {
+    background: rgb(190, 190, 183);
+    color: #4e4541;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.member > h2 {
+    color: maroon;
+}
+
+.member > img {
+    height: 300px;
+    width: 200px;
+    display: block;
+}
+
+.coursesArrayContainer {
+    margin: 10px;
+}
+
+.blockElement {
+    background: #d4d3d7;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blockElement ul {
+    border: 1px solid black;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.blockElement li {
+    background: #b2bcc0;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.duration {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.month {
+    width: 30%;
+    border: 1px solid black;
+    text-align: center;
+    background: #b2bcc0;
+}
+
+.hour {
+    width: 68%;
+    background: #b2bcc0;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.blockElement > div {
+    margin: 10px;
+    width: 100%;
+}
+
+.title {
+    border: 1px solid black;
+    background: #b2bcc0;
+    text-align: center;
+}
