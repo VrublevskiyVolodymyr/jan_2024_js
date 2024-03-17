@@ -1,0 +1,55 @@
+.div{
+    height: auto;
+    border: 1px solid black;
+}
+
+.item{
+    height: 100px;
+    border: 1px solid black;
+    background: #abb9d3;
+    margin: 5px 0;
+}
+input, button{
+    border-radius: 5px;
+    height: 30px;
+   background: #dadee0;
+}
+
+.counter{
+    height: 20px;
+    border: 1px solid black;
+    background: #cfedee;
+    text-align: center;
+    margin: 10px 0;
+    color: maroon;
+}
+
+.container_arr{
+    margin: 10px 0;
+    height: auto;
+    .button{
+        margin: 5px;
+        width: 100px;
+    }
+}
+
+.div_arr_content{
+    height: auto;
+    border: 1px solid black;
+}
+.div_arr_element{
+    height: auto;
+    border: 1px solid black;
+    margin: 5px 0;
+    background: #b7c4cc;
+}
+#text{
+    height: 50px;
+    background: #1c5b65;
+}
+.hidden{
+    display: none;
+}
+.center {
+    text-align: center;
+}
