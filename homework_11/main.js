@@ -23,7 +23,10 @@ fetch('https://dummyjson.com/carts')
                     cart[key].forEach(product => {
                         const productItem = document.createElement('li');
                         productItem.innerText = `Product ID: ${product.id}, Title: ${product.title}, Price: ${product.price}, Quantity: ${product.quantity}, Total: ${product.total}, Discount Percentage: ${product.discountPercentage}, Discounted Price: ${product.discountedPrice}`;
-                        productsList.appendChild(productItem);
+                     const img = document.createElement('img');
+                       img.src = `${product.thumbnail}`;
+                       img.style.height = '100px'
+                        productsList.append(productItem, img);
                     });
                     const productsListItem = document.createElement('li');
                     productsListItem.appendChild(productsList);
